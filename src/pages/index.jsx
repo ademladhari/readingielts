@@ -1,8 +1,6 @@
 
 import './MainComponent.css'; // Import the CSS file
-import  { MultipleChoiceSingle } from '../components/MultipleChoice';
 import { useState } from 'react';
-import { MultipleChoiceMultiple } from '../components/multipleChoiceMultiple';
 import { TrueFalseNotGiven } from '../components/TrueFalseNotGiven';
 import { Matching } from '../components/matching';
 import { ShortAnswer } from '../components/ShortAnswer';
@@ -11,7 +9,8 @@ import { SummaryCompletion } from '../components/SummaryCOmpletion';
 import { TableCompletion } from '../components/TableCompletion';
 import { Classification } from '../components/Classification';
 import { DiagramLabeling } from '../components/DiagramLabeling';
-
+import MultipleChoiceSingle from '../components/MultipleChoice'
+import MultipleChoiceMultiple from '../components/multipleChoiceMultiple';
 
 
 
@@ -185,11 +184,6 @@ import { DiagramLabeling } from '../components/DiagramLabeling';
         answer: ['nucleus', 'cell wall', 'chloroplast', 'mitochondria']
       }
     ];
-    
-
-  
-  
-  
     const passages = {
       text1: {
         "Passage1": "A. Independent travel is on the increase and while package holidays which offer an all inclusive price for transport, accommodation and often even food are financially attractive to many, according to tourism analyst Thomas Cooper, an increasing number of people now prefer a less-tailored holiday and the freedom to make spur of the moment decisions and changes to their intended plan.",

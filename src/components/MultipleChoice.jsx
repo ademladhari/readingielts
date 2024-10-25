@@ -1,5 +1,5 @@
 
-export const MultipleChoiceSingle = ({ item, answers, handleAnswerChange }) => {
+ const MultipleChoiceSingle = ({ item, answers, handleAnswerChange }) => {
   return (
     <div className="mb-6">
       <h3 className="font-medium mb-4">{item.question}</h3>
@@ -20,3 +20,4 @@ export const MultipleChoiceSingle = ({ item, answers, handleAnswerChange }) => {
     </div>
   );
 };
+export default MultipleChoiceSingle
